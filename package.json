@@ -31,8 +31,12 @@
     "webpack-extension-reloader": "^1.1.4"
   },
   "dependencies": {
+    "core-js": "^3.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2"
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-webext": "^1.1.2",
+    "regenerator-runtime": "^0.13.7"
   }
 }
