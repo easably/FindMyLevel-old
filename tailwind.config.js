@@ -1,11 +1,15 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
-    minWidth: {
-      '0': '0',
-      'popup': '350px',
-      full: '100%'
-    },
-    extend: {}
+    extend: {
+      colors: {
+        gray: colors.gray,
+        green: colors.green,
+        grayCool: "#393B46",
+        black: "#191A1F"
+      }
+    }
   },
   variants: {},
   plugins: []
