@@ -12,7 +12,7 @@ const extensionPages = {
 
 let config = {
   mode: process.env.NODE_ENV,
-  context: __dirname + '/src'
+  context: __dirname + '/src/pages'
 };
 
 let ExtensionConfig = Object.assign({}, config, {

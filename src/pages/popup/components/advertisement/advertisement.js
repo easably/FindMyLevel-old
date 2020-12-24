@@ -1,8 +1,8 @@
 import React from 'react';
-import YoutubeLogo from '../../../icons/youtubeLogo.svg';
-import NetflixLogo from '../../../icons/netflixLogo.svg';
-import Popcorn from '../../../icons/popcorn.svg';
-import ElangExtensionLogo from '../../../icons/elangExtensionLogo.svg';
+import YoutubeLogo from '../../../../icons/youtubeLogo.svg';
+import NetflixLogo from '../../../../icons/netflixLogo.svg';
+import Popcorn from '../../../../icons/popcorn.svg';
+import ElangExtensionLogo from '../../../../icons/elangExtensionLogo.svg';
 
 const Advertisement = () => {
   return (

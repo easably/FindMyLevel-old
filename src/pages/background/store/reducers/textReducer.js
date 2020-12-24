@@ -1,4 +1,4 @@
-import {FETCH_PAGE_TEXT} from "../../../constants";
+import {FETCH_PAGE_TEXT} from "../../../../constants";
 
 const initialState = {
   loading: true,
