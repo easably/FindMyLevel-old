@@ -19,6 +19,7 @@
   "background": {
     "scripts": ["dist/background.dist.js"]
   },
+  "permissions" : [ "activeTab" ],
   "options_ui": {
     "page": "dist/options.html",
     "open_in_tab": false
