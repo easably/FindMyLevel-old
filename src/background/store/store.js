@@ -1,15 +1,14 @@
 import {createStore} from 'redux';
 import {createBackgroundStore} from 'redux-webext';
-import {INCREMENT_UI_COUNTER, DECREMENT_UI_COUNTER} from '../../constants';
-import reducer from './reducers';
-import {incrementUICounter, decrementUICounter} from './actions';
+import {FETCH_PAGE_TEXT} from '../../constants';
+import reducer from './reducers/index';
+import {fetchPageText} from "./actions/textActions";
 
 const store = createStore(reducer);
 
 export default createBackgroundStore({
     store,
     actions: {
-        INCREMENT_UI_COUNTER: incrementUICounter,
-        DECREMENT_UI_COUNTER: decrementUICounter
+        FETCH_PAGE_TEXT: fetchPageText,
     }
 });

@@ -1,15 +1,7 @@
-import {INCREMENT_UI_COUNTER, DECREMENT_UI_COUNTER} from '../../constants';
+import {INCREMENT_UI_COUNTER, DECREMENT_UI_COUNTER, FETCH_PAGE_TEXT} from '../../constants';
 
-export function incrementUICounter() {
+export function fetchPageText() {
     return {
-        type: INCREMENT_UI_COUNTER,
-        value: 3
-    };
-}
-
-export function decrementUICounter() {
-    return {
-        type: DECREMENT_UI_COUNTER,
-        value: 3
+        type: FETCH_PAGE_TEXT,
     };
 }

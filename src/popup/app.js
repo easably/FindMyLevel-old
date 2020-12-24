@@ -1,16 +1,19 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import * as actions from './store/actions';
 import Main from './components/main/main';
 import Advertisement from './components/advertisement/advertisement';
+import {useEffect} from "react";
+
 
 const App = (props) => {
   const {
-    backgroundCounter,
-    uiCounter,
-    incrementUICounter,
-    decrementUICounter
+    fetchPageText
   } = props;
+
+  useEffect(() => {
+    fetchPageText();
+  }, []);
 
   return (
     <div className="w-96 bg-gray-900">
