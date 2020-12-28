@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoadingText = () => {
   return (
-    <div className="h-6 w-20 animate-pulse text-white text-3xl font-semibold">
+    <div className="w-20 animate-pulse text-white text-3xl font-semibold">
       -
     </div>
   );
