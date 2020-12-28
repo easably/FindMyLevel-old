@@ -5,7 +5,6 @@ import Main from './components/main/main';
 import Advertisement from './components/advertisement/advertisement';
 import {useEffect} from "react";
 
-
 const App = (props) => {
   const {
     fetchPageText

@@ -3,6 +3,7 @@ import YoutubeLogo from '../../../../icons/youtubeLogo.svg';
 import NetflixLogo from '../../../../icons/netflixLogo.svg';
 import Popcorn from '../../../../icons/popcorn.svg';
 import ElangExtensionLogo from '../../../../icons/elangExtensionLogo.svg';
+import strings from "../../../../locales/localisation";
 
 const Advertisement = () => {
   return (
@@ -14,12 +15,11 @@ const Advertisement = () => {
       </div>
       <div>
         <img className="py-2 w-32 " src={ElangExtensionLogo} alt="E lang Extension"/>
-        <div className="mb-10 font-light text-lg text-gray-300 leading-6">Фильмы и сериалы на английском с двойными
-          субтитрами
+        <div className="mb-10 font-light text-lg text-gray-300 leading-6">{strings.advertisement}
         </div>
         <button
           className="h-10 mb-6 py-2 px-8 rounded-3xl font-semibold tracking-wide bg-green-400 hover:bg-green-300 focus:outline-none">
-          Узнать что это!
+          {strings.learnMore}
         </button>
       </div>
     </div>
