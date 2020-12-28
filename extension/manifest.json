@@ -1,7 +1,7 @@
 {
-  "name": "Change Web Extention Name",
+  "name": "Find My Level",
   "version": "0.0.1",
-  "description": "Change the description of this web extension",
+  "description": "Evaluates difficulty of a text",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "./dist/popup.html",
