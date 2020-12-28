@@ -1,4 +1,4 @@
-import {FETCH_PAGE_TEXT} from "../../../../constants";
+import {FETCH_PAGE_TEXT_FAIL, FETCH_PAGE_TEXT_START, FETCH_PAGE_TEXT_SUCCESS} from "../../../../constants";
 import Mercury from '@postlight/mercury-parser';
 import grade from 'vocabulary-level-grader';
 
@@ -13,13 +13,18 @@ const fetchText = (callback, dispatch) => {
 }
 
 const callback = (response, dispatch) => {
+  if(response.url === undefined) {
+    dispatch({type: FETCH_PAGE_TEXT_FAIL, payload: {error: 'failed to fetch page'}})
+  }
+
   Mercury.parse(response.url, {html: response.html, contentType: 'text'})
     .then((parsedPage) => {
       let result = grade(parsedPage.content);
-      dispatch({type: FETCH_PAGE_TEXT, payload: {meta: result.meta}});
+      dispatch({type: FETCH_PAGE_TEXT_SUCCESS, payload: {meta: result.meta}});
     });
 }
 
 export const fetchPageText = (provider) => (dispatch, getState) => {
+  dispatch({type: FETCH_PAGE_TEXT_START, payload: {}});
   fetchText(callback, dispatch);
 };

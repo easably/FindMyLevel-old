@@ -13,6 +13,6 @@ const store = createStore(
 export default createBackgroundStore({
     store,
     actions: {
-        FETCH_PAGE_TEXT: fetchPageText,
+        [FETCH_PAGE_TEXT]: fetchPageText,
     }
 });

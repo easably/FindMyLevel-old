@@ -2,7 +2,9 @@ import React from 'react';
 import DifficultyScale from './difficultyScale';
 import Stats from './stats';
 
-const Main = () => {
+const Main = (props) => {
+  // Не удалось получить данные
+
   return (
     <div className="py-6 px-4 flex flex-col justify-center">
       <div className="w-full flex justify-center align-baseline pb-6">

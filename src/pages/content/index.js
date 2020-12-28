@@ -1,6 +1,3 @@
-console.log("content is loaded")
-
-
 chrome.runtime.onMessage.addListener(function (request, sender, callback) {
   if (request.type === 'getPage') {
     let response = {

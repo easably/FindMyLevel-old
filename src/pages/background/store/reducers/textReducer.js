@@ -1,4 +1,8 @@
-import {FETCH_PAGE_TEXT} from "../../../../constants";
+import {
+  FETCH_PAGE_TEXT_FAIL,
+  FETCH_PAGE_TEXT_START,
+  FETCH_PAGE_TEXT_SUCCESS
+} from "../../../../constants";
 
 const initialState = {
   loading: true,
@@ -10,11 +14,25 @@ export default (state = initialState, action) => {
   const {type, payload} = action;
 
   switch (type) {
-    case FETCH_PAGE_TEXT:
+    case FETCH_PAGE_TEXT_START:
+      return {
+        ...state,
+        error: false,
+        loading: true,
+      };
+
+    case FETCH_PAGE_TEXT_SUCCESS:
       return {
         ...state,
         meta: payload.meta,
         error: false,
+        loading: false,
+      };
+
+    case FETCH_PAGE_TEXT_FAIL:
+      return {
+        ...state,
+        error: true,
         loading: false,
       };
 
