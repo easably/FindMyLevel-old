@@ -4,8 +4,9 @@ import {connect} from "react-redux";
 import * as actions from "../../store/actions";
 
 const DifficultyScale = (props) => {
-  const { grade } = props.text.meta;
-  const gradeToPercentage = {'A1': 10, 'A2': 30, 'B1': 40, 'B2': 60, 'C1': 80, 'C2': 100}
+  const {grade} = props.text.meta;
+  const {loading} = props.text;
+  const gradeToPercentage = {'A1': 10, 'A2': 30, 'B1': 50, 'B2': 70, 'C1': 90, 'C2': 100}
 
   return (
     <div className="pr-10">
@@ -17,7 +18,7 @@ const DifficultyScale = (props) => {
           <span className="text-gray-100">A2</span>
           <span className="text-gray-100">A1</span>
         </div>
-        <Scale percentage={gradeToPercentage[grade]}/>
+        <Scale percentage={loading ? 5 : gradeToPercentage[grade]}/>
       </div>
     </div>
   );
