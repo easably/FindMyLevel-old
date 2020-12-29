@@ -7,11 +7,13 @@ import {useEffect} from "react";
 
 const App = (props) => {
   const {
-    fetchPageText
+    fetchPageText,
+    sendAnalyticsPage
   } = props;
 
   useEffect(() => {
     fetchPageText();
+    sendAnalyticsPage("/");
   }, []);
 
   return (
