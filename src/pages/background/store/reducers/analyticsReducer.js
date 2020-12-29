@@ -1,4 +1,4 @@
-import {SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from "../../../../constants";
+import {SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from "../../../../constants/constants";
 
 const initialState = {};
 

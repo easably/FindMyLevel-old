@@ -1,4 +1,4 @@
-import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE,} from '../../../constants';
+import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE,} from '../../../constants/constants';
 
 export function fetchPageText() {
   return {

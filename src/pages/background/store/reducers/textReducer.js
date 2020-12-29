@@ -2,7 +2,7 @@ import {
   FETCH_PAGE_TEXT_FAIL,
   FETCH_PAGE_TEXT_START,
   FETCH_PAGE_TEXT_SUCCESS
-} from "../../../../constants";
+} from "../../../../constants/constants";
 
 const initialState = {
   loading: true,

@@ -1,4 +1,4 @@
-import {FETCH_PAGE_TEXT_FAIL, FETCH_PAGE_TEXT_START, FETCH_PAGE_TEXT_SUCCESS} from "../../../../constants";
+import {FETCH_PAGE_TEXT_FAIL, FETCH_PAGE_TEXT_START, FETCH_PAGE_TEXT_SUCCESS} from "../../../../constants/constants";
 import Mercury from '@postlight/mercury-parser';
 import grade from 'vocabulary-level-grader';
 import {sendAnalyticsEvent} from "./analyticsActions";

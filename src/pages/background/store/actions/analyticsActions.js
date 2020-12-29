@@ -1,4 +1,4 @@
-import {SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from "../../../../constants";
+import {SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from "../../../../constants/constants";
 import '../../analytics';
 
 export const sendAnalyticsEvent = ({category, action, label}) => (dispatch, getState) => {

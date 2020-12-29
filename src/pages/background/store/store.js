@@ -1,6 +1,6 @@
 import {applyMiddleware, createStore} from 'redux';
 import {createBackgroundStore} from 'redux-webext';
-import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from '../../../constants';
+import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE} from '../../../constants/constants';
 import reducer from './reducers';
 import {fetchPageText} from "./actions/textActions";
 import thunkMiddleware from 'redux-thunk';
