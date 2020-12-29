@@ -13,7 +13,7 @@ const App = (props) => {
 
   useEffect(() => {
     fetchPageText();
-    sendAnalyticsPage("/");
+    sendAnalyticsPage("/popup");
   }, []);
 
   return (
