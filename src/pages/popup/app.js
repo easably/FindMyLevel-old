@@ -8,7 +8,7 @@ import {useEffect} from "react";
 const App = (props) => {
   const {
     fetchPageText,
-    sendAnalyticsPage
+    sendAnalyticsPage,
   } = props;
 
   useEffect(() => {

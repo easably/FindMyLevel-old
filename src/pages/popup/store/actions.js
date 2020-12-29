@@ -1,4 +1,4 @@
-import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT,} from '../../../constants';
+import {FETCH_PAGE_TEXT, SEND_ANALYTICS_EVENT, SEND_ANALYTICS_PAGE,} from '../../../constants';
 
 export function fetchPageText() {
   return {
@@ -6,17 +6,18 @@ export function fetchPageText() {
   };
 }
 
-export function sendAnalyticsEvent(category, action) {
+export function sendAnalyticsEvent(category, action, label) {
   return {
     type: SEND_ANALYTICS_EVENT,
     category,
-    action
+    action,
+    label
   };
 }
 
 export function sendAnalyticsPage(page) {
   return {
-    type: SEND_ANALYTICS_EVENT,
+    type: SEND_ANALYTICS_PAGE,
     page
   };
 }

@@ -6,4 +6,6 @@
 ga('create', 'UA-4027447-16', 'auto'); // Enter your GA identifier
 ga('set', 'checkProtocolTask', function(){});
 ga('require', 'displayfeatures');
+ga('send', 'pageview', '/');
 
+export const googleAnalytics = ga;
