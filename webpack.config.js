@@ -61,8 +61,8 @@ let ExtensionConfig = Object.assign({}, config, {
     }),
     new CopyPlugin([
       {
-        from: './icons/*',
-        to: __dirname + '/extension/dist/',
+        from: './assets/extensionIcons/*',
+        to: __dirname + '/assets/extensionIcons/',
       },
       {
         from: './popup/index.html',

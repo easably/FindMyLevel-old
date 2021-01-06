@@ -1,8 +1,8 @@
 import React from 'react';
-import YoutubeLogo from '../../../../icons/youtubeLogo.svg';
-import NetflixLogo from '../../../../icons/netflixLogo.svg';
-import Popcorn from '../../../../icons/popcorn.svg';
-import ElangExtensionLogo from '../../../../icons/elangExtensionLogo.svg';
+import YoutubeLogo from '../../../../assets/images/youtubeLogo.svg';
+import NetflixLogo from '../../../../assets/images/netflixLogo.svg';
+import Popcorn from '../../../../assets/images/popcorn.svg';
+import ElangExtensionLogo from '../../../../assets/images/elangExtensionLogo.svg';
 import strings from "../../../../locales/localisation";
 import {connect} from "react-redux";
 import * as actions from "../../store/actions";
